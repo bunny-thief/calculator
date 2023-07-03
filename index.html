@@ -11,30 +11,43 @@
 <body>
     <h1>Discount Calculator</h1>
     <form>
-        <label for="amount"> Enter bill amount</label>
-        <input type="text" id="amount"/>
+        <div class="flex">
+
+            <label class="label" for="amount"> Enter bill amount</label>
+            <input class="input-box" type="text" id="amount"/>
+        </div>
         <br/>
 
-        <label for="discount-percentage">Select discount %</label>
-        <select name="percentage" id="discount-percentage">
-            <option value="0">0</option>
-            <option value="15">15</option>
-            <option value="30">30</option>
-            <option value="50">50</option>
-        </select>
+        <div class="flex">
+
+            <label class="label for="discount-percentage">Select discount %</label>
+            <select class="input-box" name="percentage" id="discount-percentage">
+                <option value="0">0</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+            </select>
+        </div>
         <br/>
 
-        <label for="discount-amount">Discount amount:</label>
-        <input type="text" id="discount-amount" disabled/>
+        <div class="flex">
+
+            <label class="label for="discount-amount">Discount amount:</label>
+            <input class="input-box" type="text" id="discount-amount" disabled/>
+        </div>
         <br/>
 
-        <label for="pay">Final Pay</label>
-        <input type="text" id="pay" disabled/>
+        <div class="flex">
+
+            <label class="labelfor="pay">Final Pay</label>
+            <input class="input-box" type="text" id="pay" disabled/>
+        </div>
         <br/>
 
-        <button type="submit" class="calculate">Calculate</button>
-        <br/>
-        <input type="reset" value="Reset" class="reset"/>
+        <div>
+            <button class="btn" type="submit" class="calculate">Calculate</button>
+            <input class="btn" type="reset" value="Reset" class="reset"/>
+        </div>
 
     </form>
 </body>
